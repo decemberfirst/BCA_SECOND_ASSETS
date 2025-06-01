@@ -330,11 +330,12 @@ console.log('JS has been loaded');
 // myPerson.age();
 
 
-let myPerson={
-    dob:2007,
-    myAge(){
-        this.age=2025-this.dob;
-    },
-}
-myPerson.myAge();
-console.log(myPerson.age);
+// let myPerson={
+//     dob:2007,
+//     myAge(){
+//         this.age=2025-this.dob;
+//     },
+// }
+// myPerson.myAge();
+// console.log(myPerson.age);
+
