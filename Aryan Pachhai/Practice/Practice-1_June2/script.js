@@ -138,6 +138,7 @@ console.log(motherName);
 */
 
 
+/*
 let {staffId,
     staffPosition,
     staffDetails:{
@@ -231,3 +232,4 @@ console.log(isMarried);
 console.log(hasChildren);
 console.log(numberOfChildren);
 console.log(name);
+*/

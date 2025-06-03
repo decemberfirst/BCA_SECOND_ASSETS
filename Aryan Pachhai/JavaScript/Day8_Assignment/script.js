@@ -107,7 +107,7 @@ console.log('JS has been loaded');
 // 12) Username and password are correct
 
 // const username= 'Aryan';
-// const password= 'Pachhai';
+// const password= 'Aryan123';
 // let userName=prompt('Enter your username');
 // let passWord=prompt('Enter your password');
 // console.log( username==userName && password==passWord?'You have been logged in.':'The username/password is incorrect');
