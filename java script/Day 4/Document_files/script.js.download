@@ -1,0 +1,115 @@
+
+// userProm =  Number(prompt("Enter a number"));
+//  switch (userProm){
+// case 1:
+// console.log ("january")
+//     break k;
+//     case 2:
+// console.log ("february")
+//     break;
+//     case 3:
+// console.log ("march")
+//     break;
+//     case 4:
+// console.log ("april")
+//     break;
+//     case 5:
+// console.log ("may")
+//     break;
+//     case 6:
+// console.log ("june")
+//     break;
+//     case 7:
+// console.log ("july")
+//     break;
+// case8:
+// console.log ("august")
+//     break;
+//     case 9:
+// console.log ("september")
+//     break;
+//     case 10:
+// console.log ("october")
+//     break;
+//     case11:
+// console.log ("november")
+// break;
+// case 12:
+//     console.log  ("december")
+//     break;
+//     default: console.log ("none of the case matched") 
+//  }
+
+
+
+
+
+//vowel or consonant//
+
+// let character =prompt("Enter your character");
+// switch(character){
+//     case( character== "a" || "A"):
+//     console.log("vowel")
+//     break;
+//     case(character=="e" || "E"):
+//     console.log("vowel")
+//     break;
+//     case(character=="i" || "I"):
+//     console.log("vowel")
+//     break;
+//     case(character=="o" || "O"):
+//     console.log("vowel")
+//     break;
+//     case( character=="u" || "U"):
+//     console.log("vowel")
+//     break;
+//     default:
+//         console.log("consonant")
+// }
+
+
+//odd  even
+
+// let Num = Number(prompt("enter a number"));
+
+// let count = (Num % 2);
+// switch (count) {
+//     case 0:
+//         console.log('Even')
+//         break;
+//     default:
+//         console.log("odd")
+
+// }
+
+
+//grade remarks
+
+let userMark = prompt("Enter your grade");
+switch (userMark) {
+    case ("A"):
+        console.log("excellent")
+        break;
+    case ("B"):
+        console.log("excellent")
+        break;
+    case ("C"):
+        console.log("good")
+        break;
+    case ("D"):
+        console.log("good")
+        break;
+    case ("E"):
+        console.log("good")
+        break;
+    case ("F"):
+        console.log("good")
+        break;
+    default:
+        console.log("fail")
+
+}
+
+
+
+
