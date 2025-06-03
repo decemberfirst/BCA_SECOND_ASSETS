@@ -1,3 +1,198 @@
+// ------------- SHALLOW COPY AND DEEP COPY ------------------
+
+let a = 10;
+let b = a;
+b = 30;
+console.log(a); // 10
+console.log(b); // 30
+
+let person = {
+  personName: 'shreeya',
+};
+
+let anotherPerson = person;
+console.log(anotherPerson);
+
+person.personName = 'CHANGED_NAME';
+
+console.log(person); // {personName: "Ram"}
+console.log(anotherPerson); // {personName: "CHANGED_NAME"}
+
+// -------------------- PASS BY VALUE VS PASS BY REFERENCE ---------
+
+// 1) Pass by value
+
+let first = 10;
+let second = first; // second = 10
+
+first = 20;
+
+console.log(a);
+console.log(b);
+
+// ------------ FOR SPECIAL TYPES -------------
+
+let myFirstObject = {
+  personName: 'shreeya',
+};
+
+let myCopyOfFirstObject = myFirstObject;
+
+myFirstObject.personName = 'Shyam';
+
+console.log(myFirstObject);
+console.log(myCopyOfFirstObject);
+
+let dogObject = {
+  animalName: 'goat',
+  color: 'Shade of whitw',
+};
+
+let anothergoat = goatObject; // pass by reference , pass by address
+
+goatObject.color = 'Red';
+
+console.log(anothergoat);
+console.log(goatObject);
+
+let firstName = 'Ram';
+let secondName = firstName; // Pass by value
+
+secondName = 'SHYAM';
+
+console.log(firstName); // Ram
+console.log(secondName); // SHYAM
+
+
+let myNestedObject = {
+    address: {
+        permanent : "Palpa",
+        temporary: "Butwal"
+    }
+};
+
+// let myNestedObjectCopy = myNestedObject;
+let myNestedObjectCopy = structuredClone(myNestedObject);
+myNestedObject.address.permanent = "Kathmandu";
+
+console.log(myNestedObject);
+console.log(myNestedObjectCopy);
+
+
+//WAP TO DEMONSTRATE PASS BY VALUE AND PASS BY REFERENCE 
+
+//PASS BY VALUE
+let name = "dianamagar";
+let fName = name;
+
+fName = "diana"
+
+console.log(name);
+console.log(fName);
+
+//PASS BY REFERENCE 
+
+let studentName = {
+    fName: "diana",
+    sName: "magar",
+}
+
+// let copyofStudentName = studentName;
+
+// copyofStudentName.sName = "Smith";
+// copyofStudentName.fName = "Steve";
+
+// console.log(studentName);
+// console.log(copyofStudentName);
+
+
+
+
+//Finally use structuredclone to one of your program
+
+let copyofStudentName = structuredClone(studentName);
+copyofStudentName.sName = "Smith";
+copyofStudentName.fName = "Steve";
+
+console.log(studentName);
+console.log(copyofStudentName);
+
+
+//CREATE ONE PERSONOBJECT WITH NAME -> FirstName, LastName 
+// ADDRESS -> Temporary And Permanent Address
+//Copy person object to three different variables
+// Make sure that changes in one object property doesnot Reflect to another one
+
+let personObject = {
+    Name : {
+    fiName : "Shreeya",
+    SeName : "Pun"
+    },
+    Address : {
+        temporary : "Australia",
+        permanent : "Nepal"
+    }
+};
+
+let firstVariable = structuredClone(personObject);
+firstVariable.Name.fiName =  "Diana";
+firstVariable.Name.SeName =  "Puware";
+
+let secondVariable = structuredClone(personObject);
+secondVariable.Name.fiName =  "Chintan";
+secondVariable.Name.SeName =  "Kharel";
+
+let thirdVariable = structuredClone(personObject);
+thirdVariable.Name.fiName =  "Agraj";
+thirdVariable.Name.SeName =  "Adhikari";
+
+console.log(personObject);
+console.log(firstVariable);
+console.log(secondVariable);
+console.log(thirdVariable);
+
+
+//Function
+//reusable block of code to perform specific task/action
+
+function add(x, y){
+    console.log("sum",x + y);
+}
+add(2,2);
+add(4,4);
+add(10,30);
+
+
+function sub(x,y){
+    console.log("Sub",x-y);
+}
+sub(10,2);
+sub(100,50);
+sub(2025,2004);
+
+function mul(x,y){
+    console.log("Mul",x*y);
+}
+mul(10,2);
+mul(100,50);
+mul(20,20);
+
+function div(x,y){
+    console.log("div",x/y);
+}
+div(10,2);
+div(100,50);
+div(2025,25);
+
+function mod(x,y){
+    console.log("mod",x%y);
+}
+mod(10,3);
+mod(100,50);
+mod(2025,26);
+
+
+
 // 1. Write a function to add two numbers.
 // 2. Write a function to subtract one number from another.
 // 3. Write a function to multiply two numbers.
@@ -12,62 +207,65 @@
 // 12. Write a function to check if a number is prime
 
 
-function add(a, b) {
-    return a + b;
+function square(x) {
+    console.log("Square", x * x);
 }
+square(5);
+square(10);
 
-function subtract(a, b) {
-    return a - b;
+function cube(x) {
+    console.log("Cube", x * x * x);
 }
+cube(3);
+cube(4);
 
-function multiply(a, b) {
-    return a * b;
+function maxOfTwo(a, b) {
+    console.log("Max", a > b ? a : b);
 }
+maxOfTwo(10, 20);
+maxOfTwo(50, 30);
 
-function divide(a, b) {
-    if (b === 0) {
-        throw new Error("Cannot divide by zero");
-    }
-    return a / b;
+function minOfTwo(a, b) {
+    console.log("Min", a < b ? a : b);
 }
-
-function square(n) {
-    return n * n;
-}
-
-function cube(n) {
-    return n * n * n;
-}
-
-function max(a, b) {
-    return a > b ? a : b;
-}
-
-function min(a, b) {
-    return a < b ? a : b;
-}
+minOfTwo(10, 20);
+minOfTwo(50, 30);
 
 function isEven(n) {
-    return n % 2 === 0;
+    console.log(n, "is even?", n % 2 === 0);
 }
+isEven(4);
+isEven(7);
 
 function isOdd(n) {
-    return n % 2 !== 0;
+    console.log(n, "is odd?", n % 2 !== 0);
 }
+isOdd(4);
+isOdd(7);
 
 function factorial(n) {
-    if (n < 0) return undefined;
     let result = 1;
-    for (let i = 2; i <= n; i++) {
+    for(let i = 2; i <= n; i++) {
         result *= i;
     }
-    return result;
+    console.log("Factorial of", n, "is", result);
 }
+factorial(5);
+factorial(7);
 
 function isPrime(n) {
-    if (n <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i === 0) return false;
+    if (n <= 1) {
+        console.log(n, "is prime?", false);
+        return;
     }
-    return true;
+    for(let i = 2; i <= Math.sqrt(n); i++) {
+        if(n % i === 0) {
+            console.log(n, "is prime?", false);
+            return;
+        }
+    }
+    console.log(n, "is prime?", true);
 }
+isPrime(2);
+isPrime(15);
+isPrime(17);
