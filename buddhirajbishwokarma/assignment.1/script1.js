@@ -20,3 +20,6 @@ for(let i = 0; i<think1.length; i++){
     let value = think1[i];
    console.log(`The Valu IS : ${value}`);
 }
+
+
+
