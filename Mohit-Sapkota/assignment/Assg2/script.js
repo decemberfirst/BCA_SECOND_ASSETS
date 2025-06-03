@@ -1,35 +1,3 @@
-//------------------------------------Object Destructuring--------------------------------------//
-// To find animal type, animal habitat, name.
-
-// let animalInformation = {
-//     animalType: 'Aquatic',
-//     animalHabitat: 'Octopus',
-//     animalName: {
-//         scientific: {
-//             name: 'Delphinidae',
-//         },
-//         callable: {
-//             name: 'Dolphin'
-//         },     
-//     },
-// };
-
-// let {animalType, animalHabitat, animalName:{scientific:{name:scientificName}, callable:{name:callableName}}} = {animalType: 'Aquatic',
-//     animalHabitat: 'Octopus',
-//     animalName: {
-//         scientific: {
-//             name: 'Delphinidae',
-//         },
-//         callable: {
-//             name: 'Dolphin'
-//         },     
-//     },
-// };
-// console.log('Animal Type: ',animalType);
-// console.log('Animal Habitat: ',animalHabitat);
-// console.log('Scientific Name: ',scientificName);
-// console.log('Callable Name: ',callableName);
-
 
 // Task:
 // 1. Extract `title` as `movieTitle`
@@ -154,17 +122,17 @@
 //     },
 //     price
 // }={
-//         name: 'Laptop',
+//         name: 'Macbook Air m3',
 //     details: {
-//         manufacturer: 'Acer',
+//         manufacturer: 'Apple',
 //         specs: {
-//             cpu: 'i7',
-//             gpu: 'Nvidia RTX 4060',
-//             ram: '16 GB',
-//             storage: '1 TB SSD',
+//             cpu: 'M3 10core',
+//             gpu: 'integreated gpu',
+//             ram: '8 GB',
+//             storage: '256 GB SSD',
 //         },
 //     },
-//     price: '$1400',
+//     price: '$1000',
 // };
 
 // console.log('Product: ', productName);
@@ -183,16 +151,16 @@
 
 let weatherReport = {
     location: {
-        city: 'New York',
-        country: 'USA'
+        city: 'Kathmandu',
+        country: 'Nepal'
     },
     temperature: {
-        current: 25,
-        feelsLike: 27
+        current: 36,
+        feelsLike: 40,
     },
     conditions: {
         description: 'Sunny',
-        humidity: '60%'
+        humidity: '67%'
     },
 };
 
@@ -204,11 +172,11 @@ let{
 } = {
     location: {
         city: 'Butwal',
-        country: 'Ne'
+        country: 'Nepal'
     },
     temperature: {
-        current: 32,
-        feelsLike: 35,
+        current: 35,
+        feelsLike: 39,
     },
     conditions: {
         description: 'Sunny',
