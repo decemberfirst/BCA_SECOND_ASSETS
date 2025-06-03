@@ -1,0 +1,18 @@
+// // ........ ASSIGNMENT OPERATION ..........
+// let first = 10;
+// const SECOND = 10;
+// // shorthand operator
+// let a = b = c = d = e = 5;
+// console.log(b);
+ 
+// //= ,==, ===
+// // ...... compound operators ......
+// let myvar = 10;
+// // myvar = myvar - 5;
+
+
+
+// // myvar -=5;
+// console.log (( myvar +=10));
+let  user = Number(prompt("Enter currency in dollar"));
+user +=136;
