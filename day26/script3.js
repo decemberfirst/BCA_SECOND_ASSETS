@@ -65,3 +65,10 @@ sub(8,5)
 function multi(x, y ) {
     console.log(x*y);
 }
+multi(2,4)
+multi(3,5)
+
+function div(x, y) {
+console.log(X/y);
+
+}
