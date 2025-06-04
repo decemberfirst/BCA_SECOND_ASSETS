@@ -1,4 +1,4 @@
-/ // DESTRUCTURE  ANIMALTYPE, ANIMALNAME,SCIENTIFICNAME, CALLABLE NAME
+// DESTRUCTURE  ANIMALTYPE, ANIMALNAME,SCIENTIFICNAME, CALLABLE NAME
 // let AnimalInformation ={
 //     animalType: 'Mammal',
 //     animalHabitat: 'HOUSE',
@@ -14,22 +14,22 @@
 
 
 
-let{
-    animalType,
-    animalName:{
-        scientific:{name: scientificName},
-        callable:{ name: callableName}, // allias
+// let{
+//     animalType,
+//     animalName:{
+//         scientific:{name: scientificName},
+//         callable:{ name: callableName}, // allias
 
-    },
-} ={
-    animalType: 'Mammal',
-    animalHabitat: 'House',
-    animalName:{
-        scientific:{
-            name:'HOMO SAPIENS'
-        }
-    }
-}
+//     },
+// } ={
+//     animalType: 'Mammal',
+//     animalHabitat: 'House',
+//     animalName:{
+//         scientific:{
+//             name:'HOMO SAPIENS'
+//         }
+//     }
+// }
 
 
 
